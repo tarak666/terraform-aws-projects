@@ -49,26 +49,26 @@ variable "VPC_NAME" {
   default = "Projectr-VPC"
 }
 variable "Zone1" {
-  default = "us-east-2a"
+  default = "us-east-1a"
 }
 variable "Zone2" {
-  default = "us-east-2b"
+  default = "us-east-1b"
 }
 variable "Zone3" {
-  default = "us-east-2c"
+  default = "us-east-1c"
 }
 
 variable "VpcCIDR" {
-  default = "170.21.0.0./16"
+  default = "172.21.0.0/16"
 }
 variable "PubSub1CIDR" {
-  default = "170.21.1.0/16"
+  default = "172.21.1.0/24"
 }
 variable "PubSub2CIDR" {
-  default = "170.21.2.0/16"
+  default = "172.21.2.0/24"
 }
 variable "PubSub3CIDR" {
-  default = "170.21.3.0/16"
+  default = "172.21.3.0/24"
 }
 variable "PrivSub1CIDR" {
   default = "172.21.4.0/24"
