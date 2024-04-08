@@ -12,7 +12,7 @@ resource "aws_security_group" "projets-bean-elb-sg" {
     from_port = 80
     protocol = "tcp"
     to_port = 80
-    cidr_block = ["0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/0"]
 
   }
 }
@@ -30,7 +30,7 @@ resource "aws_security_group" "projects-bastion-sg" {
     from_port = 22
     protocol = "tcp"
     to_port = 22
-    cidr_block = ["0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/0"]
 
   }
 }
